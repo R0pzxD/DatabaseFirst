@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace DatabaseTask.Core.Domain
 {
-    public class Employee
+    public class passengers
     {
+        public ICollection<Flights> Flights { get; set; }
         [Key]
-        public Guid EmployeeId { get; set; }
+        public Guid passengersID { get; set; }
         public string Name { get; set; }
         public DateTime DateOfBirth {  get; set; }
+        public string ContactInformation { get; set; }
         
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
-        public ICollection<Employee> GroupId { get; set; }
+       
 
         /// TEINE HINDELINE HARJUTUS
         ///
